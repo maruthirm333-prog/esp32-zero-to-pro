@@ -1,51 +1,59 @@
- 🟢 LEVEL 1 — GPIO & BASIC PROGRAMMING
-01 💡 LED Blink
-02 🔘 Push Button + LED
-03 🚦 Traffic Light System
-04 🔔 Buzzer Control
-05 🔘 Button Controlled Buzzer
+# ESP32 Zero to Pro 🚀
 
+Complete ESP32 learning roadmap — from LED blink to LoRa field devices.
 
-🟡 LEVEL 2 — ANALOG, ADC & PWM
-06 🎚️ Potentiometer Reading
-07 💡 Potentiometer LED Brightness
-08 🌞 LDR Light Sensor
-09 🌙 Automatic Street Light
-10 🌡️ Temperature Sensor
-🟠 LEVEL 3 — SENSORS & ACTUATORS
-11 📏 Ultrasonic Distance Meter
-12 🚨 Distance Alarm
-13 👋 IR Obstacle Detector
-14 ⚙️ Servo Motor Control
-15 📡 Ultrasonic + Servo Radar
-🔵 LEVEL 4 — DISPLAYS & COMMUNICATION
-16 🖥️ OLED Display
-17 🌡️ Sensor Data on OLED
-18 🪪 RFID Card Reader
-19 📋 RFID Attendance System
-20 🔄 ESP32-to-ESP32 Communication
-🟣 LEVEL 5 — Wi-Fi & IoT
-21 📶 Connect ESP32 to Wi-Fi
-22 🌐 ESP32 Web Server
-23 💡 Control LED from Phone
-24 📊 Sensor Data on Webpage
-25 🌡️ Wi-Fi Temperature Monitor
-26 ☁️ Send Sensor Data to Cloud
-27 🏠 Wi-Fi Home Automation
-🟤 LEVEL 6 — BLUETOOTH
-28 📱 ESP32 Bluetooth Communication
-29 💡 Bluetooth LED Control
-30 ⚙️ Bluetooth Device Controller
-🔴 LEVEL 7 — ADVANCED ESP32 PROJECTS
-31 📡 ESP-NOW Communication
-32 🌐 Wi-Fi Sensor Node
-33 🔐 RFID Smart Door Lock
-34 🚗 Smart Parking System
-35 🌱 Smart Plant Monitoring
-36 💧 Automatic Irrigation System
-37 🏠 Smart Home Automation
-38 🔥 Fire/Gas Alert System
-39 🌦️ IoT Weather Station
-40 🏆 ESP32 Final Mega Project
+All projects have full code, wiring diagrams, and READMEs.
 
+---
 
+## 🟢 Level 1 — GPIO & Basic Programming
+
+| # | Project | Concepts | Repo |
+|---|---------|----------|------|
+| 01 | LED Blink | GPIO output, delay | [esp32-led-blink](https://github.com/maruthirm333-prog/esp32-led-blink) |
+| 02 | Button LED Control | INPUT_PULLUP, digitalRead | [esp32-button-led-control](https://github.com/maruthirm333-prog/esp32-button-led-control) |
+| 03 | Traffic Light | Multiple outputs, timing | [esp32-traffic-light](https://github.com/maruthirm333-prog/esp32-traffic-light) |
+| 04 | Buzzer Blink | Active buzzer, digital output | [esp32-buzzer-blink](https://github.com/maruthirm333-prog/esp32-buzzer-blink) |
+| 05 | Button Buzzer | Button + buzzer | [esp32-button-buzzer](https://github.com/maruthirm333-prog/esp32-button-buzzer) |
+
+## 🟡 Level 2 — Analog, ADC & PWM
+
+| # | Project | Concepts | Repo |
+|---|---------|----------|------|
+| 06 | Potentiometer ADC | analogRead, Serial Monitor | [esp32-potentiometer-adc](https://github.com/maruthirm333-prog/esp32-potentiometer-adc) |
+| 07 | LED Dimmer | PWM, analogWrite, map() | [esp32-led-dimmer](https://github.com/maruthirm333-prog/esp32-led-dimmer) |
+| 08 | LDR Sensor | Light sensing, threshold | [esp32-ldr-sensor](https://github.com/maruthirm333-prog/esp32-ldr-sensor) |
+| 09 | Auto Night Light | Automation logic | [esp32-auto-nightlight](https://github.com/maruthirm333-prog/esp32-auto-nightlight) |
+| 10 | LM35 Temperature | ADC → voltage → °C | [esp32-lm35-temperature](https://github.com/maruthirm333-prog/esp32-lm35-temperature) |
+
+## 🟠 Level 3 — Sensors & Actuators
+
+| # | Project | Concepts | Repo |
+|---|---------|----------|------|
+| 11 | Ultrasonic Distance | HC-SR04, pulseIn | [esp32-ultrasonic-distance](https://github.com/maruthirm333-prog/esp32-ultrasonic-distance) |
+| 12 | Ultrasonic Alarm | Sensor + buzzer trigger | [esp32-ultrasonic-alarm](https://github.com/maruthirm333-prog/esp32-ultrasonic-alarm) |
+| 13 | IR Obstacle Sensor | Digital IR, obstacle detect | [esp32-ir-obstacle-sensor](https://github.com/maruthirm333-prog/esp32-ir-obstacle-sensor) |
+| 14 | Servo Sweep | Servo library, PWM, angles | [esp32-servo-sweep](https://github.com/maruthirm333-prog/esp32-servo-sweep) |
+| 15 | Radar System | HC-SR04 + servo + Processing | [esp32-radar-system](https://github.com/maruthirm333-prog/esp32-radar-system) |
+
+## 🔴 Level 4 — Communication & Advanced
+
+| # | Project | Concepts | Repo |
+|---|---------|----------|------|
+| 16 | LoRa Demo | SPI, LoRa library, long-range | [esp32-lora-demo](https://github.com/maruthirm333-prog/esp32-lora-demo) |
+| 17 | OLED Display | I2C, SSD1306, graphics | [esp32-oled-display](https://github.com/maruthirm333-prog/esp32-oled-display) |
+| 18 | RTC Clock | DS3231, I2C, timekeeping | [esp32-rtc-clock](https://github.com/maruthirm333-prog/esp32-rtc-clock) |
+
+## 🔵 Applied Projects (using ESP32 skills)
+
+| Project | What it does | Repo |
+|---------|-------------|------|
+| Quiz Buzzer System | 6-player ranking buzzer with OLED | [quiz-buzzer-system](https://github.com/maruthirm333-prog/quiz-buzzer-system) |
+| NETRA Zone A | 7-sensor field node + LoRa | [netra](https://github.com/maruthirm333-prog/netra) |
+| Electrical Safety Box | INA219 + NTC + relay + WiFi dashboard | [electrical-safety-box](https://github.com/maruthirm333-prog/electrical-safety-box) |
+| Kannada Voice Automation | ESP32 + Whisper AI voice control | [kannada-voice-automation](https://github.com/maruthirm333-prog/kannada-voice-automation) |
+| SnakeSense | Snake detection + ESP-NOW alerts | [snakesense](https://github.com/maruthirm333-prog/snakesense) |
+
+---
+
+By Maruthi R M — EC Simplified · [YouTube](https://youtube.com/@ec-simplified)
